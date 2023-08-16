@@ -12,6 +12,8 @@ import Footer from "./component/Footer";
 import Single from "./pages/Single";
 import Write from "./pages/Write";
 
+import "./styled.scss";
+
 const Layout = () => {
   return (
     <>
