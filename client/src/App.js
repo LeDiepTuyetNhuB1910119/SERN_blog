@@ -12,7 +12,8 @@ import Footer from "./component/Footer";
 import Single from "./pages/Single";
 import Write from "./pages/Write";
 
-import "./styled.scss";
+import { ChakraProvider } from "@chakra-ui/react";
+import "./index.css";
 
 const Layout = () => {
   return (
@@ -54,11 +55,13 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <div className="app">
-      <div className="container">
-        <RouterProvider router={router} />
+    <ChakraProvider>
+      <div className="app">
+        <div className="app-container">
+          <RouterProvider router={router} />
+        </div>
       </div>
-    </div>
+    </ChakraProvider>
   );
 }
 
